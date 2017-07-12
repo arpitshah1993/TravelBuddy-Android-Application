@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.08">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/DiaryDetailToolBar"
+            android:background="#0D4F8B"
+
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Task2Fragment2actionBarText"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/Task2Fragment2actionBarImageView"/>
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.1"
+        android:background="@drawable/titlebackground"
+        android:gravity="top|center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:textColor="#000080"
+            android:layout_marginBottom="29dp"
+            android:id="@+id/diaryTitle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+
+        android:layout_weight="0.7"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines = "30"
+            android:scrollbars = "vertical"
+
+            android:id="@+id/edittextDiaryDetail"
+            android:layout_weight="0.30" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:gravity="center|top"
+        android:background="@drawable/titlebackground"
+
+        android:layout_weight="0.12">
+        <ImageButton
+            android:id="@+id/speakerButtonDiaryDetail"
+            android:layout_width="47dp"
+            android:layout_height="41dp"
+            android:background="@drawable/speaker"
+            android:layout_marginTop="23dp" />
+    </LinearLayout>
+</LinearLayout>

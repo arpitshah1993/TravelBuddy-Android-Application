@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shishirbijalwan.myapplication.newDiaryEntryActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:gravity="center|bottom"
+        android:layout_weight="0.15"
+        android:background="@drawable/titlebackground"
+        android:weightSum="1">
+        <EditText
+            android:id="@+id/titleText"
+            android:layout_marginBottom="10dp"
+            android:layout_width="393dp"
+            android:layout_height="42dp"
+            android:background="@drawable/style"
+            android:ems="10"
+            android:hint="  Title"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+
+        android:gravity="center|top"
+        android:layout_weight="0.65"
+        >
+
+        <EditText
+            android:id="@+id/textViewdata"
+            android:layout_width="393dp"
+            android:layout_height="42dp"
+            android:hint="  Description"
+            android:background="@drawable/style"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.20"
+        android:weightSum="1"
+        android:background="@drawable/titlebackground"
+
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:weightSum="1">
+            <ImageButton
+                android:text="Speak"
+                android:layout_width="47dp"
+                android:layout_height="41dp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mic"
+                android:layout_marginTop="50dp"
+                android:onClick="onButtonClick"
+                android:id="@+id/mikeButton" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/mybutton"
+                android:text="Save"
+                android:layout_height="36dp"
+                android:id="@+id/saveDiaryEntry"
+                android:onClick="onDiarySaveClick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.33"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            >
+            <ImageButton
+                android:text="Speak"
+                android:layout_width="47dp"
+                android:layout_height="41dp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/speaker"
+                android:layout_marginTop="50dp"
+                android:onClick="speak"
+                android:id="@+id/speakButtonn" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

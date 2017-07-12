@@ -1,0 +1,19 @@
+<resources>
+    <string name="navigation_drawer_open">Open Drawer</string>
+    <string name="navigation_drawer_close">Close Drawer</string>
+    <string name="app_name">My Application</string>
+    <string name="user_name">Diary Entries</string>
+    <string-array name="planets_array">
+        <item>Hindi</item>
+        <item>Korean</item>
+        <item>French</item>
+        <item>Russian</item>
+        <item>German</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+    </string-array>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBFjK8UInAeNGfhx8attCH8UNY6xzNjuwU</string>
+    <string name="next" translatable="false"> NEXT </string>
+    <string name="skip" translatable="false"> SKIP </string>
+    <string name="start" translatable="false">Gotcha!</string>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/voiceconvertorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:weightSum="1"
+    tools:context="com.example.shishirbijalwan.myapplication.VoiceConverter">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.15">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.60">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.20"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.28"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:weightSum="1">
+            <ImageButton
+                android:text="Speak"
+                android:layout_width="37dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/mic10"
+                android:layout_marginTop="50dp"
+                android:onClick="onButtonClick"
+                android:id="@+id/mikeButton"
+                android:layout_weight="0.18" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.40"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1">
+            <Spinner
+                android:id="@+id/planets_spinner"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="@drawable/black"
+                android:spinnerMode="dropdown"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_weight="0.28"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/speakButton"
+                android:layout_width="59dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/speaker12"
+                android:text="Speak" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shishirbijalwan.myapplication.MainActivity"
+    android:orientation="vertical"
+    android:background="#FFFF"
+    android:weightSum="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.25"
+    android:gravity="center">
+<ImageView
+    android:id="@+id/hme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/homepage"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.16"
+        android:weightSum="1"
+        android:orientation="vertical"
+
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/emailIdText"
+                android:hint="  UserName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="0.63"
+                android:ems="10"
+                android:background="@drawable/style"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="213dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:weightSum="1">
+            <EditText
+                android:id="@+id/passwordTextBox"
+                android:hint=" Password"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="0.63"
+                android:ems="10"
+                android:background="@drawable/style"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="213dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.30"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_weight="0.40"
+                android:background="@drawable/mybutton"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                tools:layout_editor_absoluteX="85dp"
+                tools:layout_editor_absoluteY="213dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/newUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New user? Wanna TravelBuddy?"
+                android:textColor="#0D4F8B"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="148dp"
+                tools:layout_editor_absoluteY="395dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".15"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/wrongCredentialTextBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.931"
+            />
+    </LinearLayout>
+
+</LinearLayout>
